@@ -6,7 +6,7 @@ This is a chrome browser extension.
 
 - Then it pulls the recomended videos into that playlist and redirects you to that playlist
 
-- ATTENTION the app globaly can only be used 10 times a day. By me, and you and your friend combined. This is because youtube limits how many api calls you can make to a day. (10 by this use case)
+- ATTENTION the app globaly can only be used 10 times a day. By me, and you and your friend combined. This is because youtube limits how many api calls you can make to a day. (10 by this use case. That is equivelent to adding approximatley 200 videos to an existing TV playlist )
 
 - To unleash this script's full potential (and have all of those 10 api calls all to yoursel) you need to take this app and get Your unique chrome extension app key.
 
