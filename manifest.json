@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+    "name": "Personal TV",
+    "version": "1.0.0",
+  
+    "description": "Create a playlist of your recomended videos and start watching",
+    "icons": {"128": "icon_128.png"},
+  
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Create a new playlist."
+    },
+
+    "background": {
+        "scripts": ["jquery.js", "background.js"],
+        "persistent": false
+    },
+
+    "author": "Nils Riga",
+
+    "offline_enabled": false,
+
+    "permissions": [
+        "activeTab", 
+        "identity",
+        "tabs",
+        "https://*/*"
+    ],
+
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx2kSRuhPNBbT8HMyAJTQ5ufO/lxbxyc6l4d8hP+Kf7YAvHOuW6Y6cUWaHEyjSZnq3F+BWP9/n2q/kvMh8tJdrWr4rlU56rmutVHv2SRuOVr/s3l7e9zqk5Vm+io73M9vc9qdeywL8MqwSBXYGN9xK2JsJx0RyvGK/FWitXQ8cSAgk696WGSRTthAUVcedDF6B+Pftm97jpSOFi6WTqocMLA0YAZi/+5GsqZzudjqeGS+nxITWHVGDrMEE5BIdgE+siZBgf0z1BTZzQybQvMPyw0NDsIS2xsDE9clrkj6t9J7dKmnvBwGV0q2lQqdAyV02C9JCejtYTfFb9oPTVJwBwIDAQAB",
+
+    "oauth2": {
+        "client_id": "922133810139-4qe3vorg8gltpch761fs4m7vmp464rl4.apps.googleusercontent.com",
+        "scopes":[
+            "email",
+            "profile",
+            "https://www.googleapis.com/auth/youtube.force-ssl"
+        ]
+      }
+  }
