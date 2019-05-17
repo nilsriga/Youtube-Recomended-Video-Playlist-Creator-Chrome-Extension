@@ -3,7 +3,7 @@
     "name": "Personal TV",
     "version": "1.0.0",
   
-    "description": "Create a playlist of your recomended videos and start watching",
+    "description": "This extension scrapes your recomened video id's from youtube's home page and put's them in a playlist called TV. ATTENTION. This Extension wors only if you are signed into chrome browser, and have turned on the 'sync' option. And you also have to be signed into youtube with the same account.",
     "icons": {"128": "icon_128.png"},
   
     "browser_action": {
@@ -24,7 +24,8 @@
         "activeTab", 
         "identity",
         "tabs",
-        "https://*/*"
+        "https://*/*",
+        "webRequestBlocking"
     ],
 
     "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx2kSRuhPNBbT8HMyAJTQ5ufO/lxbxyc6l4d8hP+Kf7YAvHOuW6Y6cUWaHEyjSZnq3F+BWP9/n2q/kvMh8tJdrWr4rlU56rmutVHv2SRuOVr/s3l7e9zqk5Vm+io73M9vc9qdeywL8MqwSBXYGN9xK2JsJx0RyvGK/FWitXQ8cSAgk696WGSRTthAUVcedDF6B+Pftm97jpSOFi6WTqocMLA0YAZi/+5GsqZzudjqeGS+nxITWHVGDrMEE5BIdgE+siZBgf0z1BTZzQybQvMPyw0NDsIS2xsDE9clrkj6t9J7dKmnvBwGV0q2lQqdAyV02C9JCejtYTfFb9oPTVJwBwIDAQAB",
