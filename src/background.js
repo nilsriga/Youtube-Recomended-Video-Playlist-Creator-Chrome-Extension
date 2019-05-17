@@ -30,8 +30,8 @@ chrome.browserAction.onClicked.addListener(function () {
 
                     if (changeInfo.status == 'complete' && (tab.url == "https://www.youtube.com/" || tab.url == "https://youtube.com/")) {
 
-                        chrome.tabs.executeScript({ file: 'jquery.js' });
-                        chrome.tabs.executeScript({ file: 'scraper.js' })
+                        chrome.tabs.executeScript({ file: 'dist/jquery.js' });
+                        chrome.tabs.executeScript({ file: 'dist/scraper.js' })
 
                         chrome.tabs.onUpdated.removeListener(arguments.callee);
                     }
@@ -42,8 +42,8 @@ chrome.browserAction.onClicked.addListener(function () {
 
         } else {
 
-            chrome.tabs.executeScript({ file: 'jquery.js' });
-            chrome.tabs.executeScript({ file: 'scraper.js' });
+            chrome.tabs.executeScript({ file: 'dist/jquery.js' });
+            chrome.tabs.executeScript({ file: 'dist/scraper.js' });
 
         }
 
@@ -72,6 +72,7 @@ chrome.browserAction.onClicked.addListener(function () {
         console.log("Channel ID:" + channelId);
         console.log("link IDs: " + linkIds);
         console.log("First ID: " + linkIds[0]);
+        
         // end of scraper.js parser
 
 
@@ -83,25 +84,6 @@ chrome.browserAction.onClicked.addListener(function () {
 
         // this authorizes requests
         chrome.identity.getAuthToken({ interactive: true }, function (token) {
-
-
-            chrome.webRequest.onHeadersReceived.addListener(
-                function(info) {
-                    var headers = info.responseHeaders;
-                    for (var i=headers.length-1; i>=0; --i) {
-                        var header = headers[i].name.toLowerCase();
-                        if (header == 'x-frame-options' || header == 'frame-options') {
-                            headers.splice(i, 1); // Remove header
-                        }
-                    }
-                    return {responseHeaders: headers};
-                },
-                {
-                    urls: [ '*://*/*' ], // Pattern to match all http(s) pages
-                    types: [ 'sub_frame' ]
-                },
-                ['blocking', 'responseHeaders']
-            );
 
             // This is a GET reques to get "TV" playlist's id
             let gettingTvPlaylistId = {

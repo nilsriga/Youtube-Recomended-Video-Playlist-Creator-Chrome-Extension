@@ -12,7 +12,7 @@
     },
 
     "background": {
-        "scripts": ["jquery.js", "background.js"],
+        "scripts": ["dist/jquery.js", "dist/background.js"],
         "persistent": false
     },
 
@@ -24,8 +24,7 @@
         "activeTab", 
         "identity",
         "tabs",
-        "https://*/*",
-        "webRequestBlocking"
+        "https://*/*"
     ],
 
     "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx2kSRuhPNBbT8HMyAJTQ5ufO/lxbxyc6l4d8hP+Kf7YAvHOuW6Y6cUWaHEyjSZnq3F+BWP9/n2q/kvMh8tJdrWr4rlU56rmutVHv2SRuOVr/s3l7e9zqk5Vm+io73M9vc9qdeywL8MqwSBXYGN9xK2JsJx0RyvGK/FWitXQ8cSAgk696WGSRTthAUVcedDF6B+Pftm97jpSOFi6WTqocMLA0YAZi/+5GsqZzudjqeGS+nxITWHVGDrMEE5BIdgE+siZBgf0z1BTZzQybQvMPyw0NDsIS2xsDE9clrkj6t9J7dKmnvBwGV0q2lQqdAyV02C9JCejtYTfFb9oPTVJwBwIDAQAB",

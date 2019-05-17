@@ -1,0 +1,29 @@
+{
+  "name": "tv",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "background.js",
+  "mode": "production",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snotrman/Youtube-Recomended-Video-Playlist-Creator-Chrome-Extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snotrman/Youtube-Recomended-Video-Playlist-Creator-Chrome-Extension/issues"
+  },
+  "homepage": "https://github.com/snotrman/Youtube-Recomended-Video-Playlist-Creator-Chrome-Extension#readme",
+  "devDependencies": {
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}

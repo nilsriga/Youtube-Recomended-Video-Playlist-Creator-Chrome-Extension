@@ -1,3 +1,4 @@
+
 alert("Creating a playlist. Please wait 1-5 seconds. Don't switch tabs or windows.");
 
 var linkIds = [];
